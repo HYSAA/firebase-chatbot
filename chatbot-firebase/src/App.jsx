@@ -64,7 +64,7 @@ function SignOut() {
     <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
   )
 }
-//added comment 
+//added comment sdsds
 
 function ChatRoom() {
   const dummy = useRef();
@@ -112,6 +112,7 @@ function ChatRoom() {
 }
 
 
+
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
 
@@ -121,6 +122,8 @@ function ChatMessage(props) {
     <div className={`message ${messageClass}`}>
       <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
       <p>{text}</p>
+
+      
     </div>
   </>)
 }
